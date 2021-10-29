@@ -10,15 +10,36 @@ const imageFolderPath = join(process.cwd(),"./public")
 
 
 const server = express()
-server.use(cors())
+
+
+const whitelist = [process.env.FE_LOCAL_URL,process.env.FE_PROD_URL]// 
+const corsOpts = {
+  origin: function (origin, next) {
+   
+    console.log("CURRENT ORIGIN: ", origin)
+    if (!origin || whitelist.indexOf(origin) !== -1) {
+      
+      next(null, true)
+    } else {
+     
+      next(new Error("CORS ERROR"))
+    }
+  },
+}
+
+server.use(cors(corsOpts))
 server.use(express.json())
 server.use(express.static(imageFolderPath))
+
 
 server.use("/media",mediaRouter)
 server.use("/reviews",reviewsRouter)
 
 
+
 const port = process.env.PORT
+
+
 console.table(listEndpoints(server))
 
 server.listen(port,()=>
