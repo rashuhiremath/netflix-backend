@@ -1,0 +1,42 @@
+[
+  {
+    "Title": "The Lord of the Rings",
+    "Year": "2004",
+    "Type": "movie",
+    "Poster": "http://localhost:3001/poster/image/hfng68j4kvc75pg1.jpg",
+    "id": "hfng68j4kvc75pg2",
+    "createdAt": "2021-10-29T09:52:32.016Z"
+  },
+  {
+    "Title": "Thunder Force",
+    "Year": "2021",
+    "Type": "movie",
+    "Poster": "http://localhost:3001/poster/image/hfng67r8kvca7uhh.jpg",
+    "id": "hfng67r8kvca7uhh",
+    "createdAt": "2021-10-29T11:18:10.708Z"
+  },
+  {
+    "Title": "The Tunnel",
+    "Year": "2010",
+    "Type": "movie",
+    "Poster": "http://localhost:3001/poster/image/hfng67r8kvcad08p.jpg",
+    "id": "hfng67r8kvcad08p",
+    "createdAt": "2021-10-29T11:22:11.449Z"
+  },
+  {
+    "Title": "The Wave",
+    "Year": "2015",
+    "Type": "movie",
+    "Poster": "http://localhost:3001/poster/image/hfng67r8kvcac03c.jpg",
+    "id": "hfng67r8kvcac03c",
+    "createdAt": "2021-10-29T11:21:24.600Z"
+  },
+  {
+    "Title": "Iron man",
+    "Year": "2008",
+    "Type": "movie",
+    "Poster": "http://localhost:3001/poster/image/hfng67r8kvcatoue.jpg",
+    "id": "hfng67r8kvcatoue",
+    "createdAt": "2021-10-29T11:35:09.830Z"
+  }
+]
